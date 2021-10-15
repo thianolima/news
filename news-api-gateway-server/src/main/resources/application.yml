@@ -1,0 +1,21 @@
+server:
+  port: 9999
+
+spring:
+  cloud:
+    config:
+      uri: http://localhost:8888
+
+    gateway:
+      routes:
+        - id: assinantes
+          uri: http://localhost:8083
+          predicates:
+            - Path=/assinantes/**,
+
+        - id: noticiais
+          uri: http://localhost:8084
+          predicates:
+            - Path=/noticias/**
+  application:
+    name: news-api-gateway-server

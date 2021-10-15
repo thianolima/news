@@ -1,0 +1,1 @@
+insert into noticia(id, titulo, texto, ativo) values (1, 'SEJA BEM VINDO', 'Obrigado por assinar o melhor sites de noticias de tencologia.', true)

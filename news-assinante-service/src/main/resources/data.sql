@@ -1,0 +1,1 @@
+insert into assinante (id, nome, email, ativo) values (1, 'thiano pereira lima', 'thiano.lima@totvs.com.br', true);
